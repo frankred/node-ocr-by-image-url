@@ -1,0 +1,33 @@
+{
+  "name": "ocr-by-image-url",
+  "version": "0.0.1",
+  "description": "Simple to use module to recognize texts in images by an image url",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frankred/node-ocr-by-image-url.git"
+  },
+  "keywords": [
+    "ocr",
+    "image",
+    "url",
+    "tesseract",
+    "node-tesseract"
+  ],
+  "author": "Frank Roth",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frankred/node-ocr-by-image-url/issues"
+  },
+  "homepage": "https://github.com/frankred/node-ocr-by-image-url#readme",
+  "dependencies": {
+    "async": "^1.5.0",
+    "debug": "^2.2.0",
+    "needle": "^0.11.0",
+    "node-tesseract": "^0.2.7",
+    "node-uuid": "^1.4.4"
+  }
+}
