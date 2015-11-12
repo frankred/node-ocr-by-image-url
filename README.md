@@ -10,26 +10,14 @@ npm install ocr-by-image-url
 ```js
 var ocr = require('ocr-by-image-url');
 
-// OCR by image url
-ocr.getImageText('http://image.com/cat.png', function(error, text){
-    if(error){
-        // Dammit...
-        return;
-    }
-
-    console.log(text.trim);
+ocr.getImageText('http://image.com/cat-poem.png', function(error, text){
+    console.log(text.trim());
 });
 
 
-// OCR by image url through proxy
+// With proxy
 var proxy = 'http://user:pass@proxy.server.com:3128';
-
 ocr.getImageText('http://image.com/cat.png', proxy, function(error, text){
-    if(error){
-        // Dammit...
-        return;
-    }
-
     console.log(text.trim);
-})
+});
 ```
