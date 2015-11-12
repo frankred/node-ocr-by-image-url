@@ -10,6 +10,11 @@ var debug = require('debug')('ocr-by-image-url');
 module.exports = {
     getImageText: function (url, proxy, callback) {
 
+        if (typeof proxy === "function") {
+            callback = proxy;
+            proxy = null;
+        }
+
         var wget = function (callback) {
             debug('http get image: ' + url);
 

@@ -18,7 +18,7 @@ describe('ocr-by-image-url', function () {
     });
 
     it('image1', function (done) {
-        ocr.getImageText('https://raw.githubusercontent.com/frankred/node-ocr-by-image-url/master/test/resources/image1.jpg', null, function (error, text) {
+        ocr.getImageText('https://raw.githubusercontent.com/frankred/node-ocr-by-image-url/master/test/resources/image1.jpg', function (error, text) {
 
             if (error) {
                 throw error;
