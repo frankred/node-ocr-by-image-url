@@ -2,6 +2,10 @@
 Node module based on ```node-tesseract``` to recognize texts in images by an image url.
 
 ## Install
+### 1) Install the native ocr engine
+```tesseract-ocr``` can be found here: [https://code.google.com/p/tesseract-ocr](https://code.google.com/p/tesseract-ocr "https://code.google.com/p/tesseract-ocr").
+
+### 2) Install npm module
 ```
 npm install ocr-by-image-url
 ```
