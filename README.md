@@ -22,6 +22,6 @@ ocr.getImageText('http://image.com/cat-poem.png', function(error, text){
 // With proxy
 var proxy = 'http://user:pass@proxy.server.com:3128';
 ocr.getImageText('http://image.com/cat.png', proxy, function(error, text){
-    console.log(text.trim);
+    console.log(text.trim());
 });
 ```
